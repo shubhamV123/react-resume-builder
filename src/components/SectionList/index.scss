@@ -1,0 +1,23 @@
+@import 'styles/index.scss';
+
+.section-list__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-list__name {
+  color: $color-gray-900;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.section-list__role {
+  color: $color-gray-700;
+}
+
+@media print {
+  .section-list__ul {
+    @include print-ul-margin();
+  }
+}

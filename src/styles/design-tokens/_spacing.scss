@@ -1,0 +1,32 @@
+//Tailwind style spacing
+$spacing-0: 0;
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1rem;
+$spacing-5: 1.25rem;
+$spacing-6: 1.5rem;
+$spacing-8: 2rem;
+$spacing-10: 2.5rem;
+$spacing-12: 3rem;
+$spacing-16: 4rem;
+$spacing-20: 5rem;
+$spacing-24: 6rem;
+$spacing-32: 8rem;
+$spacing-40: 10rem;
+$spacing-48: 12rem;
+$spacing-56: 14rem;
+$spacing-64: 16rem;
+
+$spacing-inset-xl: $spacing-24;
+$spacing-inset-s: $spacing-1;
+$spacing-inset-s-2: $spacing-2;
+$spacing-inset-s-3: $spacing-3;
+
+$spacing-stack-m: $spacing-4;
+$spacing-stack-m-2: $spacing-5;
+$spacing-stack-m-3: $spacing-6;
+
+$spacing-stack-l: $spacing-8;
+
+//TODO: Add all respective spacing variable name. Convention: s,m,l,x(everyone has 4 value)

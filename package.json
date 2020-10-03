@@ -1,24 +1,38 @@
 {
+  "name": "react-resume-builder",
+  "version": "2.4.0",
+  "description": "A simple react application to create your resume based on dynamic configuration",
+  "author": "Shubham Verma <shubhav8527@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx}\""
+    "lint": "prettier --check \"src/**/*.{js,jsx}\"",
+    "scss": "node-sass --watch scss -o css"
   },
   "dependencies": {
+    "node-sass-chokidar": "^1.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.10.4",
     "@snowpack/app-scripts-react": "^1.12.0",
     "@snowpack/plugin-dotenv": "^2.0.1",
+    "@snowpack/plugin-optimize": "^0.2.2",
     "@snowpack/plugin-react-refresh": "^2.3.0",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
+    "husky": "^4.3.0",
     "jest": "^26.2.2",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.0.2",
     "snowpack": "^2.13.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }

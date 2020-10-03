@@ -1,0 +1,8 @@
+@mixin section-border {
+  border-bottom: 1px solid $color-gray-500;
+  padding-top: $spacing-inset-s-3;
+}
+
+@mixin print-ul-margin {
+  margin: 2mm;
+}

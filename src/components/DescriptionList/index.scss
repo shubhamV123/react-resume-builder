@@ -1,0 +1,26 @@
+@import 'styles/index.scss';
+
+.description-list__title {
+  color: $color-gray-900;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.description-list {
+  @include section-border();
+}
+
+.description-list:last-child {
+  border-bottom: none;
+}
+
+@media print {
+  .description-list {
+    padding-top: 2mm;
+  }
+
+  .description-list__ul {
+    @include print-ul-margin();
+  }
+}
