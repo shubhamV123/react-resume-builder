@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.css';
+import './index.scss';
 
 const SectionList = ({ name, role, years, description, metaInfo }) => {
   const sectionTemplate = description.map((data, index) => {

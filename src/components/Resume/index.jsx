@@ -4,7 +4,7 @@ import Header from '../Header';
 import ProfessionExperience from '../ProfessionalExperience';
 import DescriptionList from '../DescriptionList';
 
-import './index.css';
+import './index.scss';
 
 const Resume = (props) => {
   return (

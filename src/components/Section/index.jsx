@@ -3,7 +3,7 @@ import React from 'react';
 import SectionList from '../SectionList';
 import DescriptionList from '../DescriptionList';
 
-import './index.css';
+import './index.scss';
 
 const Section = ({ title, list }) => {
   return (

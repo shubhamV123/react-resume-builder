@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ResumeContext } from '@app/hoc/context';
 
-import './index.css';
+import './index.scss';
 
 const Header = () => {
   const { personal } = useContext(ResumeContext);

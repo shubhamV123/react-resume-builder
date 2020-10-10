@@ -7,20 +7,19 @@ module.exports = {
   alias: {
     '@app': './src',
     components: './src/components',
-    styles: './src/styles',
+    '@styles': './src/styles/index.scss',
+  },
+  buildOptions: {
+    sourceMaps: true,
+    baseUrl: '/',
+    clean: true,
+    metaDir: 'static/snowpack',
+    webModulesUrl: 'web',
   },
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
-    '@snowpack/plugin-optimize',
+    '@snowpack/plugin-sass',
     '@snowpack/plugin-webpack',
-    [
-      '@snowpack/plugin-run-script',
-      {
-        cmd:
-          'node-sass-chokidar ./src/ -o ./src/ --output-style expanded --include-path src/ --include-path node_modules/',
-        watch: '$1 --watch ',
-      },
-    ],
   ],
 };
