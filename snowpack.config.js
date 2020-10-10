@@ -13,6 +13,7 @@ module.exports = {
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-optimize',
+    '@snowpack/plugin-webpack',
     [
       '@snowpack/plugin-run-script',
       {
