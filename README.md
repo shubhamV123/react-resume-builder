@@ -2,36 +2,46 @@
 
 A simple react based web app for which you can use to generate a resume. All configs are dynamic so need to worry you can simply update config and download your resume. That's it.
 
-> ✨ Bootstrapped with Create Snowpack App (CSA). Learn more about snowpack [here](https://www.snowpack.dev/)
+<img src="./resume-builder.gif" width="100%"/>
 
 ### How it works?
 
-- You need to download this project locally. Then install dependencies using `yarn install` or `npm install`
-- Update you `resume-details-dev.json` config according to your requirement
-- Currently you can download a pdf only using devtoop. `Click on print by doing right click`. Will add support soon to download via button
+1. Simply you need to update json value that's it.
+2. I would suggest to get basic overview of **html, json** for playing with this tool. You can directly pass html tag in it. For better resume modification.
+3. **Make sure** set print option `A4` and `uncheck print header and footer` option
 
-### How to use?
+#### How to use locally
+
+- You need to download this project locally. Then install dependencies using `yarn install` or `npm install`
+- Runs the app in the development mode.
+  Open http://localhost:8080 to view it in the browser.
+
+- Update you `resume-details-dev.json` config according to your requirement
 
 - If you found there is not required field according to your requirement. You can simply add your config in `resume-details-dev.json`. The only **catch** here is you need to to defined in your json this format:
 
-```
-"objectKey":{
-    "title":"Your title",
-    "description":["list of dependency you want to show"]
-}
+  ```json
+  {
+    "objectKey": {
+      "title": "Your title",
+      "description": ["list of dependency you want to show"]
+    }
+  }
+  ```
 
-```
+- Once you have done this to your json file. You can simply use list based ui by going through `Resume.js` and add
 
-Once you have done this to your json file. You can simply use list based ui by going through `Resume.js` and add
-
-```
-DescriptionList dataKey={your key} />
-
-```
+  ```jsx
+    <DescriptionList dataKey={your key} />
+  ```
 
 - If you want to add section like `profession experience` then use same data format as it is used in `.json` file. For more `Reference` check out how `ProfessionExperience` component is work
 
-- There are two type of generic components currently `Section`(professional experience like) and `DescriptionList` (certificationa and award like). Choose based on the requirement
+- There are two type of generic components currently `Section`(professional experience like) and `DescriptionList` (certificationa and award like). Choose based on the requirement. _Currently you have to add manually add in `Resume.js` for your requirement field. I have plan in future to handle this dynamically_
+
+### Constraints
+
+1. This web app is _not mobile friendly_ and I have no plan to make it responsive. I removed view port so that atleast you can access desktop view in mobile. All functionaliy will be remain there
 
 ## Available Scripts
 
@@ -45,11 +55,13 @@ You will also see any lint errors in the console.
 
 ### TODO
 
-- [] Add another version template
-- [] Create website so user directly can play with configs
-- [] Added proptypes or flow/ts
-- [] Add pdf button to download resume directly
-- [] Improve readme doc
+- [ ] Add another version template
+- [x] Create website based config so that user can directly play with tools
+- [ ] Added proptypes or flow/ts
+- [x] Add pdf button to download resume directly
+- [ ] Improve readme doc
+- [ ] Current code is raw one. Refactor it
+- [ ] Add workflow to auto approve dependabot request
 
 ### REFERENCE:
 

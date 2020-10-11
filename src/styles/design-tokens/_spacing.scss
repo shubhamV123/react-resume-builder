@@ -18,15 +18,55 @@ $spacing-48: 12rem;
 $spacing-56: 14rem;
 $spacing-64: 16rem;
 
-$spacing-inset-xl: $spacing-24;
+//padding
 $spacing-inset-s: $spacing-1;
 $spacing-inset-s-2: $spacing-2;
 $spacing-inset-s-3: $spacing-3;
+$spacing-inset-s-4: $spacing-4;
+$spacing-inset-l: $spacing-5;
+$spacing-inset-l-2: $spacing-6;
+$spacing-inset-l-3: $spacing-8;
+$spacing-inset-l-4: $spacing-10;
+$spacing-inset-xl: $spacing-12;
+$spacing-inset-xl-2: $spacing-16;
+$spacing-inset-xl-3: $spacing-20;
+$spacing-inset-xl-4: $spacing-24;
+$spacing-inset-xxl: $spacing-32;
+$spacing-inset-xxl-2: $spacing-40;
+$spacing-inset-xxl-3: $spacing-48;
+$spacing-inset-xxl-4: $spacing-56;
 
-$spacing-stack-m: $spacing-4;
-$spacing-stack-m-2: $spacing-5;
-$spacing-stack-m-3: $spacing-6;
-
-$spacing-stack-l: $spacing-8;
-
-//TODO: Add all respective spacing variable name. Convention: s,m,l,x(everyone has 4 value)
+//inline
+$spacing-inline-s: $spacing-1;
+$spacing-inline-s-2: $spacing-2;
+$spacing-inline-s-3: $spacing-3;
+$spacing-inline-s-4: $spacing-4;
+$spacing-inline-l: $spacing-5;
+$spacing-inline-l-2: $spacing-6;
+$spacing-inline-l-3: $spacing-8;
+$spacing-inline-l-4: $spacing-10;
+$spacing-inline-xl: $spacing-12;
+$spacing-inline-xl-2: $spacing-16;
+$spacing-inline-xl-3: $spacing-20;
+$spacing-inline-xl-4: $spacing-24;
+$spacing-inline-xxl: $spacing-32;
+$spacing-inline-xxl-2: $spacing-40;
+$spacing-inline-xxl-3: $spacing-48;
+$spacing-inline-xxl-4: $spacing-56;
+//Margin
+$spacing-stack-s: $spacing-1;
+$spacing-stack-s-2: $spacing-2;
+$spacing-stack-s-3: $spacing-3;
+$spacing-stack-s-4: $spacing-4;
+$spacing-stack-l: $spacing-5;
+$spacing-stack-l-2: $spacing-6;
+$spacing-stack-l-3: $spacing-8;
+$spacing-stack-l-4: $spacing-10;
+$spacing-stack-xl: $spacing-12;
+$spacing-stack-xl-2: $spacing-16;
+$spacing-stack-xl-3: $spacing-20;
+$spacing-stack-xl-4: $spacing-24;
+$spacing-stack-xxl: $spacing-32;
+$spacing-stack-xxl-2: $spacing-40;
+$spacing-stack-xxl-3: $spacing-48;
+$spacing-stack-xxl-4: $spacing-56;

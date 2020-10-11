@@ -6,9 +6,9 @@ import DescriptionList from '../DescriptionList';
 
 import './index.scss';
 
-const Resume = (props) => {
+const Resume = ({ id }) => {
   return (
-    <div className="resume">
+    <div className="resume" id={id}>
       <Header />
       <ProfessionExperience />
       <DescriptionList dataKey={'skills'} />

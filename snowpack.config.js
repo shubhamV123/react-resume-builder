@@ -9,12 +9,14 @@ module.exports = {
     components: './src/components',
     '@styles': './src/styles/index.scss',
   },
+  installOptions: {
+    namedExports: ['react-ace', 'ace-builds', '@material-ui/icons'],
+  },
   buildOptions: {
     sourceMaps: true,
     baseUrl: '/',
     clean: true,
     metaDir: 'static/snowpack',
-    webModulesUrl: 'web',
   },
   plugins: [
     '@snowpack/plugin-react-refresh',

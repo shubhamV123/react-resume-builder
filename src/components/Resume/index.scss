@@ -1,10 +1,10 @@
 @import '../../styles/index.scss';
 
 .resume {
-  max-width: 1140px;
   background-color: $color-white;
-  margin: auto;
-  padding: $spacing-stack-m $spacing-stack-l $spacing-stack-m $spacing-stack-l;
+  padding: $spacing-stack-s-4 $spacing-stack-l-3 $spacing-stack-s-4
+    $spacing-stack-l-3;
+  flex: 1;
 }
 
 @media print {

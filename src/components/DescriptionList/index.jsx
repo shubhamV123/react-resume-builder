@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { ResumeContext } from '@app/hoc/context';
+import { ResumeContext } from '@app/App';
 
 import './index.scss';
 
