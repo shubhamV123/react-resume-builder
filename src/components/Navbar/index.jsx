@@ -4,6 +4,7 @@ import PrintIcon from '@material-ui/icons/Print';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,9 +17,13 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
     cursor: 'pointer',
   },
+  github: {
+    marginLeft: theme.spacing(2),
+    cursor: 'pointer',
+  },
 }));
 
-const Navbar = ({ handleModal, printResume }) => {
+const Navbar = ({ handleModal, printResume, showPrintIcon }) => {
   const classes = useStyles();
 
   return (
@@ -35,7 +40,13 @@ const Navbar = ({ handleModal, printResume }) => {
           >
             How it works?
           </Typography>
-          <PrintIcon onClick={printResume} className="cp" />
+          {showPrintIcon && <PrintIcon onClick={printResume} className="cp" />}
+          <GitHubIcon
+            className={classes.github}
+            onClick={() =>
+              window.open('https://github.com/shubhamV123/react-resume-builder')
+            }
+          />
         </Toolbar>
       </AppBar>
       <Toolbar />

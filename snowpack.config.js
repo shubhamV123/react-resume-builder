@@ -10,7 +10,12 @@ module.exports = {
     '@styles': './src/styles/index.scss',
   },
   installOptions: {
-    namedExports: ['react-ace', 'ace-builds', '@material-ui/icons'],
+    namedExports: [
+      'react-ace',
+      'ace-builds',
+      '@material-ui/icons',
+      'react-swipeable-views',
+    ],
   },
   buildOptions: {
     sourceMaps: true,

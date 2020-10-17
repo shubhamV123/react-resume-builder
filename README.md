@@ -39,10 +39,6 @@ A simple react based web app for which you can use to generate a resume. All con
 
 - There are two type of generic components currently `Section`(professional experience like) and `DescriptionList` (certificationa and award like). Choose based on the requirement. _Currently you have to add manually add in `Resume.js` for your requirement field. I have plan in future to handle this dynamically_
 
-### Constraints
-
-1. This web app is _not mobile friendly_ and I have no plan to make it responsive. I removed view port so that atleast you can access desktop view in mobile. All functionaliy will be remain there
-
 ## Available Scripts
 
 ### npm start
