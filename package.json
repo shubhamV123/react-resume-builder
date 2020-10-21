@@ -2,7 +2,7 @@
   "name": "react-resume-builder",
   "version": "2.4.0",
   "description": "A simple react application to create your resume based on dynamic configuration",
-  "author": "Shubham Verma <shubhav8527@gmail.com>",
+  "author": "Shubham Verma <shubhamv8527@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
