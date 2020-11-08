@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <div className="header__name">{name}</div>
       <div className="header__contact">
-        {email} | {mobile}
+        {email} {mobile && `| ${mobile}`}
       </div>
       <div className="header__contact-link">
         <a href={website}>{website}</a>
