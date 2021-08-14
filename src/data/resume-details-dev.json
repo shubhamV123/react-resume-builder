@@ -1,69 +1,136 @@
 {
-  "personal": {
+  "basics": {
     "name": "John Doe",
-    "role": "Software Engineer",
-    "mobile": "+91 9876543210",
-    "email": "johndoe@gmail.com",
-    "linkedin": "https://linkedin.com/linkedin",
-    "github": "https://linkedin.com/github",
-    "website": "https://john.doe"
-  },
-  "company": {
-    "title": "Professional Experience",
-    "companyList": [
+    "label": "Programmer",
+    "image": "https://www.w3schools.com/tags/img_girl.jpg",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "CA"
+    },
+    "profiles": [
       {
-        "name": "ABC COMPANY",
-        "role": "Senior Associate Engineer",
-        "years": "Jan 2018 - present",
-        "description": [
-          "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
-          "Improved demand forecasting that reduced backorders to retail partners by 17%.",
-          "Completed focus group and BI research that helped boost NW region sales by 15%."
-        ]
-      },
-      {
-        "name": "ABC COMPANY 2",
-        "role": "Senior Associate",
-        "years": "Feb 2014 - Dec 2017",
-        "description": [
-          "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
-          "Improved demand forecasting that reduced backorders to retail partners by 17%.",
-          "Completed focus group and BI research that helped boost NW region sales by 15%."
-        ]
+        "network": "Twitter",
+        "username": "john",
+        "url": "https://twitter.com/john"
       }
     ]
   },
-  "certificates": {
-    "title": "Certificates and Awards",
-    "description": [
-      "PMP—Project Management Institute",
-      "Six Sigma Black Belt—ASQ ",
-      "Microsoft Certified Technology Specialist",
-      "VMware Certified Design Expert"
-    ]
-  },
-  "skills": {
-    "title": "Technical skills and tools",
-    "description": [
-      "<strong>Programming Language</strong>: Javascript",
-      "<strong>Front End</strong>: HTML5, CSS3, Object Oriented JavaScript, JSON, AJAX",
-      "<strong>Database</strong>: MongoDB",
-      "<strong>Framework & libraries</strong>: ReactJs,NodeJs,Bootstrap,SemanticUI,ExpressJs,<br/>Algoliasearch,MaterialUi",
-      "<strong>Server and Tools</strong> : Netlify,Serverless,Cloudinary,Logrocket,Sentry,Postman-collections"
-    ]
-  },
-  "profiles": {
-    "title": "Other profile links",
-    "description": [
-      "<strong>Github</strong> : <a href='https://github.com/johnDoe'>https://github.com/johnDoe</a>",
-      "<strong>Linkedin</strong>: <a href='https://www.linkedin.com/in/johnDoe'>https://www.linkedin.com/in/johnDoe</a>"
-    ]
-  },
-  "about": {
-    "title": "About me",
-    "description": [
-      "<strong>Education</strong> : Master in something",
-      "<strong>Interests</strong>: Video Games, Anime, Cricket, Technologies and tech products, Reading books."
-    ]
-  }
+  "work": [
+    {
+      "name": "Company A",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2015-03-02",
+      "endDate": "2016-03-02",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
+      "highlights": [
+        "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
+        "Improved demand forecasting that reduced backorders to retail partners by 17%.",
+        "Completed focus group and BI research that helped boost NW region sales by 15%."
+      ]
+    },
+    {
+      "name": "Company B",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2016-03-02",
+      "endDate": "2017-03-02",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. ",
+      "highlights": [
+        "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
+        "Improved demand forecasting that reduced backorders to retail partners by 17%.",
+        "Completed focus group and BI research that helped boost NW region sales by 15%."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Company C",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2015-03-02",
+      "endDate": "2016-03-02",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
+      "highlights": [
+        "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
+        "Improved demand forecasting that reduced backorders to retail partners by 17%.",
+        "Completed focus group and BI research that helped boost NW region sales by 15%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2009-03-02",
+      "endDate": "2013-05-02",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2017-03-02",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2017-03-02",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "description": "Description…",
+      "highlights": ["Won award at AIHacks 2016"],
+      "keywords": ["HTML"],
+      "startDate": "2017-03-02",
+      "endDate": "2017-03-02",
+      "url": "https://project.com/",
+      "roles": ["Team Lead"],
+      "entity": "Entity",
+      "type": "application"
+    }
+  ]
 }

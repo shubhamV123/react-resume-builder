@@ -9,6 +9,7 @@ const DescriptionList = ({ dataKey }) => {
   const { title, description } = data[dataKey];
 
   const sectionTemplate = description.map((data, index) => {
+    console.log(dataKey);
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
   });
 
