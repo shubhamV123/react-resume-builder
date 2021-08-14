@@ -1,12 +1,13 @@
 {
-  "personal": {
+  "basics": {
     "name": "John Doe",
-    "role": "Software Engineer",
-    "mobile": "+91 9876543210",
-    "email": "johndoe@gmail.com",
-    "linkedin": "https://linkedin.com/linkedin",
-    "github": "https://linkedin.com/github",
-    "website": "https://john.doe"
+    "label": "Programmer",
+    "image": "",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "summary": "A summary of John Doe…",
+    "location": ""
   },
   "company": {
     "title": "Professional Experience",

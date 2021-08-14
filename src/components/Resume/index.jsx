@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../Header';
+import Summary from '../Summary';
 import ProfessionExperience from '../ProfessionalExperience';
 import DescriptionList from '../DescriptionList';
 
@@ -10,6 +11,7 @@ const Resume = ({ id }) => {
   return (
     <div className="resume" id={id}>
       <Header />
+      <Summary />
       <ProfessionExperience />
       <DescriptionList dataKey={'skills'} />
       <DescriptionList dataKey={'certificates'} />

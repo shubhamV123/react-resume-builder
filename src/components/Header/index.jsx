@@ -4,16 +4,16 @@ import { ResumeContext } from '@app/App';
 import './index.scss';
 
 const Header = () => {
-  const { personal } = useContext(ResumeContext);
-  const { name, email, mobile, website } = personal;
+  const { basics } = useContext(ResumeContext);
+  const { name, label, image, email, phone, url, summary, location } = basics;
   return (
     <div className="header">
       <div className="header__name">{name}</div>
       <div className="header__contact">
-        {email} {mobile && `| ${mobile}`}
+        {email} {phone && `| ${phone}`}
       </div>
       <div className="header__contact-link">
-        <a href={website}>{website}</a>
+        <a href={url}>{url}</a>
       </div>
     </div>
   );
