@@ -8,7 +8,7 @@
     "url": "https://johndoe.com",
     "summary": {
       "title": "Summary",
-      "content": "A summary of John Doe…"
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada."
     },
     "location": {
       "address": "2712 Broadway St",
@@ -29,20 +29,26 @@
     "title": "Professional Experience",
     "work": [
       {
-        "name": "ABC COMPANY",
-        "role": "Senior Associate Engineer",
-        "years": "Jan 2018 - present",
-        "description": [
+        "name": "Company A",
+        "position": "President",
+        "url": "https://company.com",
+        "startDate": "2013-01-01",
+        "endDate": "2014-01-01",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada.",
+        "highlights": [
           "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
           "Improved demand forecasting that reduced backorders to retail partners by 17%.",
           "Completed focus group and BI research that helped boost NW region sales by 15%."
         ]
       },
       {
-        "name": "ABC COMPANY 2",
-        "role": "Senior Associate",
-        "years": "Feb 2014 - Dec 2017",
-        "description": [
+        "name": "Company B",
+        "position": "President",
+        "url": "https://company.com",
+        "startDate": "2013-01-01",
+        "endDate": "2014-01-01",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada.",
+        "highlights": [
           "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
           "Improved demand forecasting that reduced backorders to retail partners by 17%.",
           "Completed focus group and BI research that helped boost NW region sales by 15%."
