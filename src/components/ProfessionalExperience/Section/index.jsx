@@ -1,7 +1,6 @@
 import React from 'react';
 
 import SectionList from '../SectionList';
-import DescriptionList from '../DescriptionList';
 
 import './index.scss';
 
