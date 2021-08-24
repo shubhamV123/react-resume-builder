@@ -8,14 +8,14 @@
     "url": "https://johndoe.com",
     "summary": {
       "title": "Summary",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada."
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis."
     },
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
       "city": "San Francisco",
       "countryCode": "US",
-      "region": "California"
+      "region": "CA"
     },
     "profiles": [
       {
@@ -25,7 +25,7 @@
       }
     ]
   },
-  "professionalexperience": {
+  "professionalExperience": {
     "title": "Professional Experience",
     "work": [
       {
@@ -34,7 +34,7 @@
         "url": "https://company.com",
         "startDate": "2013-01-01",
         "endDate": "2014-01-01",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
         "highlights": [
           "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
           "Improved demand forecasting that reduced backorders to retail partners by 17%.",
@@ -47,7 +47,7 @@
         "url": "https://company.com",
         "startDate": "2013-01-01",
         "endDate": "2014-01-01",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. ",
         "highlights": [
           "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
           "Improved demand forecasting that reduced backorders to retail partners by 17%.",
@@ -60,25 +60,12 @@
     "title": "Volunteer Work",
     "work": [
       {
-        "name": "Company A",
+        "organization": "Company B",
         "position": "President",
         "url": "https://company.com",
         "startDate": "2013-01-01",
         "endDate": "2014-01-01",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada.",
-        "highlights": [
-          "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
-          "Improved demand forecasting that reduced backorders to retail partners by 17%.",
-          "Completed focus group and BI research that helped boost NW region sales by 15%."
-        ]
-      },
-      {
-        "name": "Company B",
-        "position": "President",
-        "url": "https://company.com",
-        "startDate": "2013-01-01",
-        "endDate": "2014-01-01",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. Aliquam a pulvinar orci. Quisque elementum volutpat volutpat. Curabitur lacinia arcu sit amet vulputate malesuada.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
         "highlights": [
           "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
           "Improved demand forecasting that reduced backorders to retail partners by 17%.",
@@ -87,37 +74,96 @@
       }
     ]
   },
-  "certificates": {
+  "education": {
+    "title": "Education",
+    "degree": [
+      {
+        "institution": "University",
+        "url": "https://institution.com/",
+        "area": "Software Development",
+        "studyType": "Bachelor",
+        "startDate": "2011-01-01",
+        "endDate": "2013-01-01",
+        "score": "4.0",
+        "courses": ["DB1101 - Basic SQL"]
+      }
+    ]
+  },
+  "awards": {
     "title": "Certificates and Awards",
-    "description": [
-      "PMP—Project Management Institute",
-      "Six Sigma Black Belt—ASQ ",
-      "Microsoft Certified Technology Specialist",
-      "VMware Certified Design Expert"
+    "certificates": [
+      {
+        "title": "Award",
+        "date": "2014-11-01",
+        "awarder": "Company",
+        "summary": "There is no spoon."
+      }
     ]
   },
-  "skills": {
-    "title": "Technical skills and tools",
-    "description": [
-      "<strong>Programming Language</strong>: Javascript",
-      "<strong>Front End</strong>: HTML5, CSS3, Object Oriented JavaScript, JSON, AJAX",
-      "<strong>Database</strong>: MongoDB",
-      "<strong>Framework & libraries</strong>: ReactJs,NodeJs,Bootstrap,SemanticUI,ExpressJs,<br/>Algoliasearch,MaterialUi",
-      "<strong>Server and Tools</strong> : Netlify,Serverless,Cloudinary,Logrocket,Sentry,Postman-collections"
+  "publications": {
+    "title": "Publications",
+    "work": [
+      {
+        "name": "Publication",
+        "publisher": "Company",
+        "releaseDate": "2014-10-01",
+        "url": "https://publication.com",
+        "summary": "Description…"
+      }
     ]
   },
-  "profiles": {
-    "title": "Other profile links",
-    "description": [
-      "<strong>Github</strong> : <a href='https://github.com/johnDoe'>https://github.com/johnDoe</a>",
-      "<strong>Linkedin</strong>: <a href='https://www.linkedin.com/in/johnDoe'>https://www.linkedin.com/in/johnDoe</a>"
+  "skillSet": {
+    "title": "Skills",
+    "skills": [
+      {
+        "name": "Web Development",
+        "level": "Master",
+        "keywords": ["HTML", "CSS", "JavaScript"]
+      }
     ]
   },
-  "about": {
-    "title": "About me",
-    "description": [
-      "<strong>Education</strong> : Master in something",
-      "<strong>Interests</strong>: Video Games, Anime, Cricket, Technologies and tech products, Reading books."
+  "languages": {
+    "title": "Languages",
+    "language": [
+      {
+        "language": "English",
+        "fluency": "Native speaker"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interests",
+    "interest": [
+      {
+        "name": "Wildlife",
+        "keywords": ["Ferrets", "Unicorns"]
+      }
+    ]
+  },
+  "references": {
+    "title": "References",
+    "reference": [
+      {
+        "name": "Jane Doe",
+        "reference": "Reference…"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "work": [
+      {
+        "name": "Project",
+        "description": "Description…",
+        "highlights": ["Won award at AIHacks 2016"],
+        "keywords": ["HTML"],
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "url": "https://project.com/",
+        "roles": ["Team Lead"],
+        "entity": "Entity",
+        "type": "application"
+      }
     ]
   }
 }

@@ -3,15 +3,16 @@ import React from 'react';
 import './index.scss';
 
 const SectionList = ({
-  organization,
-  position,
+  institution,
+  studyType,
+  area,
   url,
+  score,
   startDate,
   endDate,
-  summary,
-  highlights,
+  courses,
 }) => {
-  const sectionTemplate = highlights.map((data, index) => {
+  const sectionTemplate = courses.map((data, index) => {
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
   });
 
@@ -19,14 +20,15 @@ const SectionList = ({
     <div className="section-list">
       <div className="section-list__info">
         <div>
-          <div className="section-list__name">{organization}</div>
-          <div className="section-list__role">{position}</div>
+          <div className="section-list__university">{institution}</div>
+          <div className="section-list__studyType">
+            {studyType} degree in {area}
+          </div>
         </div>
         <div className="section-list__date">
           {startDate}-{endDate}
         </div>
       </div>
-      <div className="">{summary}</div>
       <ul className="section-list__ul">{sectionTemplate}</ul>
     </div>
   );

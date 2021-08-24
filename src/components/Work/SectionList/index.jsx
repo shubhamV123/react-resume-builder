@@ -5,6 +5,7 @@ import './index.scss';
 const SectionList = ({
   name,
   position,
+  url,
   startDate,
   endDate,
   summary,

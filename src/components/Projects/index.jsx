@@ -3,11 +3,11 @@ import { ResumeContext } from '@app/App';
 
 import Section from './Section';
 
-const ProfessionalExperience = (props) => {
+const Projects = (props) => {
   const data = useContext(ResumeContext);
-  const { professionalexperience } = useContext(ResumeContext);
-  const { title, work } = professionalexperience;
+  const { projects } = useContext(ResumeContext);
+  const { title, work } = projects;
   return <Section title={title} list={work} />;
 };
 
-export default ProfessionalExperience;
+export default Projects;
