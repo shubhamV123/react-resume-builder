@@ -6,8 +6,8 @@ import Section from './Section';
 const Education = (props) => {
   const data = useContext(ResumeContext);
   const { education } = useContext(ResumeContext);
-  const { title, degree } = education;
-  return <Section title={title} list={degree} />;
+
+  return <Section list={education} />;
 };
 
 export default Education;

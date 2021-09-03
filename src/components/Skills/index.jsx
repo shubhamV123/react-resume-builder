@@ -5,9 +5,9 @@ import Section from './Section';
 
 const Skills = (props) => {
   const data = useContext(ResumeContext);
-  const { skillSet } = useContext(ResumeContext);
-  const { title, skills } = skillSet;
-  return <Section title={title} list={skills} />;
+  const { skills } = useContext(ResumeContext);
+
+  return <Section list={skills} />;
 };
 
 export default Skills;

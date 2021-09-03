@@ -6,8 +6,8 @@ import Section from './Section';
 const References = (props) => {
   const data = useContext(ResumeContext);
   const { references } = useContext(ResumeContext);
-  const { title, reference } = references;
-  return <Section title={title} list={reference} />;
+
+  return <Section list={references} />;
 };
 
 export default References;

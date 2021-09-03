@@ -6,10 +6,7 @@
     "email": "john@gmail.com",
     "phone": "(912) 555-4321",
     "url": "https://johndoe.com",
-    "summary": {
-      "title": "Summary",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis."
-    },
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -25,145 +22,115 @@
       }
     ]
   },
-  "professionalExperience": {
-    "title": "Professional Experience",
-    "work": [
-      {
-        "name": "Company A",
-        "position": "President",
-        "url": "https://company.com",
-        "startDate": "2013-01-01",
-        "endDate": "2014-01-01",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
-        "highlights": [
-          "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
-          "Improved demand forecasting that reduced backorders to retail partners by 17%.",
-          "Completed focus group and BI research that helped boost NW region sales by 15%."
-        ]
-      },
-      {
-        "name": "Company B",
-        "position": "President",
-        "url": "https://company.com",
-        "startDate": "2013-01-01",
-        "endDate": "2014-01-01",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. ",
-        "highlights": [
-          "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
-          "Improved demand forecasting that reduced backorders to retail partners by 17%.",
-          "Completed focus group and BI research that helped boost NW region sales by 15%."
-        ]
-      }
-    ]
-  },
-  "volunteer": {
-    "title": "Volunteer Work",
-    "work": [
-      {
-        "organization": "Company B",
-        "position": "President",
-        "url": "https://company.com",
-        "startDate": "2013-01-01",
-        "endDate": "2014-01-01",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
-        "highlights": [
-          "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
-          "Improved demand forecasting that reduced backorders to retail partners by 17%.",
-          "Completed focus group and BI research that helped boost NW region sales by 15%."
-        ]
-      }
-    ]
-  },
-  "education": {
-    "title": "Education",
-    "degree": [
-      {
-        "institution": "University",
-        "url": "https://institution.com/",
-        "area": "Software Development",
-        "studyType": "Bachelor",
-        "startDate": "2011-01-01",
-        "endDate": "2013-01-01",
-        "score": "4.0",
-        "courses": ["DB1101 - Basic SQL"]
-      }
-    ]
-  },
-  "awards": {
-    "title": "Certificates and Awards",
-    "certificates": [
-      {
-        "title": "Award",
-        "date": "2014-11-01",
-        "awarder": "Company",
-        "summary": "There is no spoon."
-      }
-    ]
-  },
-  "publications": {
-    "title": "Publications",
-    "work": [
-      {
-        "name": "Publication",
-        "publisher": "Company",
-        "releaseDate": "2014-10-01",
-        "url": "https://publication.com",
-        "summary": "Description…"
-      }
-    ]
-  },
-  "skillSet": {
-    "title": "Skills",
-    "skills": [
-      {
-        "name": "Web Development",
-        "level": "Master",
-        "keywords": ["HTML", "CSS", "JavaScript"]
-      }
-    ]
-  },
-  "languages": {
-    "title": "Languages",
-    "language": [
-      {
-        "language": "English",
-        "fluency": "Native speaker"
-      }
-    ]
-  },
-  "interests": {
-    "title": "Interests",
-    "interest": [
-      {
-        "name": "Wildlife",
-        "keywords": ["Ferrets", "Unicorns"]
-      }
-    ]
-  },
-  "references": {
-    "title": "References",
-    "reference": [
-      {
-        "name": "Jane Doe",
-        "reference": "Reference…"
-      }
-    ]
-  },
-  "projects": {
-    "title": "Projects",
-    "work": [
-      {
-        "name": "Project",
-        "description": "Description…",
-        "highlights": ["Won award at AIHacks 2016"],
-        "keywords": ["HTML"],
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "url": "https://project.com/",
-        "roles": ["Team Lead"],
-        "entity": "Entity",
-        "type": "application"
-      }
-    ]
-  }
+  "work": [
+    {
+      "name": "Company A",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
+      "highlights": [
+        "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
+        "Improved demand forecasting that reduced backorders to retail partners by 17%.",
+        "Completed focus group and BI research that helped boost NW region sales by 15%."
+      ]
+    },
+    {
+      "name": "Company B",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. ",
+      "highlights": [
+        "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
+        "Improved demand forecasting that reduced backorders to retail partners by 17%.",
+        "Completed focus group and BI research that helped boost NW region sales by 15%."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Company B",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
+      "highlights": [
+        "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
+        "Improved demand forecasting that reduced backorders to retail partners by 17%.",
+        "Completed focus group and BI research that helped boost NW region sales by 15%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "description": "Description…",
+      "highlights": ["Won award at AIHacks 2016"],
+      "keywords": ["HTML"],
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "url": "https://project.com/",
+      "roles": ["Team Lead"],
+      "entity": "Entity",
+      "type": "application"
+    }
+  ]
 }

@@ -9,8 +9,8 @@ const Summary = () => {
   return (
     <div className="summary">
       <div>
-        <div className="title">{summary.title}</div>
-        <div className="content">{summary.content}</div>
+        <div className="title">Summary</div>
+        <div className="content">{summary}</div>
       </div>
     </div>
   );
