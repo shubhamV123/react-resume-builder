@@ -13,16 +13,18 @@ const SectionList = ({
   startDate,
   endDate,
   highlights,
+  position,
+  summary,
 }) => {
-  const projectHighlights = highlights.map((data, index) => {
+  const _highlights = highlights?.map((data, index) => {
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
   });
 
-  const projectKeywords = keywords.map((data, index) => {
+  const _keywords = keywords?.map((data, index) => {
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
   });
 
-  const projectRoles = roles.map((data, index) => {
+  const _roles = roles?.map((data, index) => {
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
   });
 
@@ -31,16 +33,16 @@ const SectionList = ({
       <div className="section-list__info">
         <div>
           <div className="section-list__name">{name}</div>
-          <div className="section-list__role">{projectRoles}</div>
+          <div className="section-list__role">{_roles || position}</div>
         </div>
         <div className="section-list__date">
           {startDate}-{endDate}
         </div>
       </div>
-      <div className="">{description}</div>
-      <div className="">{url}</div>
-      <ul className="section-list__ul">Highlights:{projectHighlights}</ul>
-      <ul className="section-list__ul">{projectKeywords}</ul>
+      <div className="">{description || summary}</div>
+      {url && <div className="">{url}</div>}
+      <ul className="section-list__ul">Highlights:{_highlights}</ul>
+      {_keywords && <ul className="section-list__ul">{_keywords}</ul>}
     </div>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import SectionList from '../SectionList';
+import SectionList from './SectionList';
 
 import './index.scss';
 
-const Section = ({ list }) => {
+const Section = ({ list, name }) => {
   return (
     <div className="section">
-      <div className="section__title">Projects</div>
+      <div className="section__title">{name}</div>
 
       {list.map((data, index) => (
         <SectionList key={'section-list-' + index} {...data} />
