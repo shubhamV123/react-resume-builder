@@ -7,7 +7,7 @@ const Projects = (props) => {
   const data = useContext(ResumeContext);
   const { projects } = useContext(ResumeContext);
 
-  return <Section list={projects} name="Projects" />;
+  return <Section list={projects} sectionName="Projects" />;
 };
 
 export default Projects;
