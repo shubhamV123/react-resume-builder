@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import SwipeableViews from 'react-swipeable-views';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import { styled } from '@mui/material/styles';
+
+import { useTheme } from '@mui/material/styles';
+import AppBar from '@mui/material/AppBar';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -34,18 +36,18 @@ function a11yProps(index) {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
+
+const TabContainer =  styled('div')(({ theme }) => ({
+  backgroundColor: theme.palette.background.paper,
     width: '100%',
-  },
-  tabPanel: {
-    padding: 0,
-  },
+}));
+
+const StyledTabPanel =  styled(TabPanel)(({ theme }) => ({
+  padding: 0,
 }));
 
 const PreviewTabs = ({ editor, preview, setActiveIndex }) => {
-  const classes = useStyles();
+  // const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -58,7 +60,7 @@ const PreviewTabs = ({ editor, preview, setActiveIndex }) => {
     setValue(index);
   };
   return (
-    <div className={classes.root}>
+    <TabContainer>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -77,20 +79,19 @@ const PreviewTabs = ({ editor, preview, setActiveIndex }) => {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabPanel
+        <StyledTabPanel
           value={value}
           index={0}
           id="layout__no-print"
           dir={theme.direction}
-          className={classes.tabPanel}
         >
           {editor}
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
+        </StyledTabPanel>
+        <StyledTabPanel value={value} index={1} dir={theme.direction}>
           {preview}
-        </TabPanel>
+        </StyledTabPanel>
       </SwipeableViews>
-    </div>
+    </TabContainer>
   );
 };
 

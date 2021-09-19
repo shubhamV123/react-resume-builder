@@ -9,19 +9,26 @@ module.exports = {
     components: './src/components',
     '@styles': './src/styles/index.scss',
   },
-  installOptions: {
-    namedExports: [
+  packageOptions: {
+    knownEntrypoints: [
       'react-ace',
       'ace-builds',
-      '@material-ui/icons',
       'react-swipeable-views',
+      // '@mui/utils',
     ],
+    // knownEntrypoints:[
+    //   '@mui/utils'
+    // ]
   },
   buildOptions: {
-    sourceMaps: true,
+    sourcemap: true,
     baseUrl: '/',
     clean: true,
-    metaDir: 'static/snowpack',
+    metaUrlPath: 'static/snowpack',
+  },
+  optimize: {
+    bundle: true,
+    minify: true,
   },
   plugins: [
     '@snowpack/plugin-react-refresh',

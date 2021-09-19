@@ -1,48 +1,43 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import PrintIcon from '@material-ui/icons/Print';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import { styled } from '@mui/material/styles';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  title: {
-    flexGrow: 1,
-  },
-  howItWorks: {
-    marginRight: theme.spacing(2),
-    cursor: 'pointer',
-  },
-  github: {
-    marginLeft: theme.spacing(2),
-    cursor: 'pointer',
-  },
+import PrintIcon from '@mui/icons-material/Print';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+const Title =  styled(Typography)(({ theme }) => ({
+  flexGrow: 1,
+}));
+
+const HowItWorks = styled(Typography)(({ theme }) => ({
+  marginRight: theme.spacing(2),
+  cursor: 'pointer',
+}));
+
+const GithubIcon = styled(GitHubIcon)(({ theme }) => ({
+  marginLeft: theme.spacing(2),
+  cursor: 'pointer',
 }));
 
 const Navbar = ({ handleModal, printResume, showPrintIcon }) => {
-  const classes = useStyles();
 
   return (
     <div id="layout__no-print">
       <AppBar>
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Title variant="h6">
             Resume builder
-          </Typography>
-          <Typography
+          </Title>
+          <HowItWorks
             variant="subtitle1"
-            className={classes.howItWorks}
             onClick={handleModal}
           >
             How it works?
-          </Typography>
+          </HowItWorks>
           {showPrintIcon && <PrintIcon onClick={printResume} className="cp" />}
-          <GitHubIcon
-            className={classes.github}
+          <GithubIcon
             onClick={() =>
               window.open('https://github.com/shubhamV123/react-resume-builder')
             }

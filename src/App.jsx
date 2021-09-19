@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { createTheme,ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme();
+
 
 import AceEditor from 'react-ace';
 import ace from 'ace-builds/src-noconflict/ace';
@@ -111,8 +115,10 @@ function App() {
   const handleActiveIndex = (index) => {
     setActiveIndex(index);
   };
+  
   return (
-    <ResumeContext.Provider value={JSON.parse(value)}>
+    <ThemeProvider theme={theme}>
+      <ResumeContext.Provider value={JSON.parse(value)}>
       <Navbar
         handleModal={openModal}
         printResume={checkPrintWarning}
@@ -134,6 +140,8 @@ function App() {
       <PrintWarning open={showPrintWarning} handleModal={printResume} />
       <HowItWorks open={modal} handleModal={closeModal} />
     </ResumeContext.Provider>
+</ThemeProvider>
+    
   );
 }
 export { ResumeContext };
