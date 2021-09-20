@@ -28,6 +28,9 @@ const SectionList = ({
   title,
   date,
   awarder,
+  publisher,
+  releaseDate,
+  level,
 }) => {
   const _highlights = highlights?.map((data, index) => {
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
@@ -118,6 +121,32 @@ const SectionList = ({
         <div className="section-list__info">
           <div>
             <div className="section-list__university">{name}</div>
+          </div>
+        </div>
+        <ul className="section-list__ul">{_keywords}</ul>
+      </div>
+    );
+  } else if (sectionName == 'Publications') {
+    return (
+      <div className="section-list">
+        <div className="section-list__info">
+          <div>
+            <div className="section-list__title">{name}</div>
+            <div className="section-list__awarder">{publisher}</div>
+          </div>
+          <div className="section-list__date">{releaseDate}</div>
+          <div className="">{summary}</div>
+          <div className="">{url}</div>
+        </div>
+      </div>
+    );
+  } else if (sectionName == 'Skills') {
+    return (
+      <div className="section-list">
+        <div className="section-list__info">
+          <div>
+            <div className="section-list__name">{name}</div>
+            <div className="section-list__level">{level}</div>
           </div>
         </div>
         <ul className="section-list__ul">{_keywords}</ul>
