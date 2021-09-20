@@ -20,6 +20,14 @@ const SectionList = ({
   reference,
   language,
   fluency,
+  institution,
+  studyType,
+  area,
+  score,
+  courses,
+  title,
+  date,
+  awarder,
 }) => {
   const _highlights = highlights?.map((data, index) => {
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
@@ -32,6 +40,11 @@ const SectionList = ({
   const _roles = roles?.map((data, index) => {
     return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
   });
+
+  const _courses = courses?.map((data, index) => {
+    return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
+  });
+
   if (
     sectionName == 'Work Experience' ||
     sectionName == 'Volunteer Work' ||
@@ -41,7 +54,10 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__name">{name || organization}</div>
+            <div className="section-list__name">
+              {name || entity || organization}
+            </div>
+            <div className="section-list__name">{type}</div>
             <div className="section-list__role">{_roles || position}</div>
           </div>
           <div className="section-list__date">
@@ -54,7 +70,7 @@ const SectionList = ({
         {_keywords && <ul className="section-list__ul">{_keywords}</ul>}
       </div>
     );
-  } else if (sectionName == 'Languages' || (sectionName = 'References')) {
+  } else if (sectionName == 'Languages' || sectionName == 'References') {
     return (
       <div className="section-list">
         <div className="section-list__info">
@@ -63,6 +79,48 @@ const SectionList = ({
             <div className="">{reference || fluency}</div>
           </div>
         </div>
+      </div>
+    );
+  } else if (sectionName == 'Education') {
+    return (
+      <div className="section-list">
+        <div className="section-list__info">
+          <div>
+            <div className="section-list__university">{institution}</div>
+            <div className="section-list__studyType">
+              {studyType} degree in {area}
+            </div>
+            <div className="">Score: {score}</div>
+          </div>
+          <div className="section-list__date">
+            {startDate}-{endDate}
+          </div>
+        </div>
+        <ul className="section-list__ul">{_courses}</ul>
+      </div>
+    );
+  } else if (sectionName == 'Awards') {
+    return (
+      <div className="section-list">
+        <div className="section-list__info">
+          <div>
+            <div className="section-list__title">{title}</div>
+            <div className="section-list__awarder">{awarder}</div>
+          </div>
+          <div className="section-list__date">{date}</div>
+          <div className="">{summary}</div>
+        </div>
+      </div>
+    );
+  } else if (sectionName == 'Interests') {
+    return (
+      <div className="section-list">
+        <div className="section-list__info">
+          <div>
+            <div className="section-list__university">{name}</div>
+          </div>
+        </div>
+        <ul className="section-list__ul">{_keywords}</ul>
       </div>
     );
   }
