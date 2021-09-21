@@ -32,27 +32,27 @@ const SectionList = ({
   releaseDate,
   level,
 }) => {
-  const _highlights = highlights?.map((data, index) => {
-    return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
-  });
+  const injectHTML = (content, key) => {
+    return content?.map((data, index) => {
+      return (
+        <li
+          key={`${key}_${index}`}
+          dangerouslySetInnerHTML={{ __html: data }}
+        ></li>
+      );
+    });
+  };
+  const _highlights = injectHTML(highlights, '_highlights');
+  const _keywords = injectHTML(keywords, '_keywords');
+  const _roles = injectHTML(roles, '_roles');
+  const _courses = injectHTML(courses, '_courses');
 
-  const _keywords = keywords?.map((data, index) => {
-    return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
-  });
-
-  const _roles = roles?.map((data, index) => {
-    return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
-  });
-
-  const _courses = courses?.map((data, index) => {
-    return <li key={index} dangerouslySetInnerHTML={{ __html: data }}></li>;
-  });
-
-  if (
-    sectionName == 'Work Experience' ||
-    sectionName == 'Volunteer Work' ||
-    sectionName == 'Projects'
-  ) {
+  const sectionHighlightsAllowed = [
+    'Work Experience',
+    'Volunteer Work',
+    'Projects',
+  ];
+  if (sectionHighlightsAllowed.includes(sectionName)) {
     return (
       <div className="section-list">
         <div className="section-list__info">
@@ -60,15 +60,15 @@ const SectionList = ({
             <div className="section-list__main">
               {name || entity || organization}
             </div>
-            <div className="">{type}</div>
+            <div>{type}</div>
             <div className="section-list__sub">{_roles || position}</div>
           </div>
           <div className="section-list__date">
             {startDate}-{endDate}
           </div>
         </div>
-        <div className="">{description || summary}</div>
-        {url && <div className="">{url}</div>}
+        <div>{description || summary}</div>
+        {url && <div>{url}</div>}
         <ul className="section-list__ul">Highlights:{_highlights}</ul>
         {_keywords && <ul className="section-list__ul">{_keywords}</ul>}
       </div>
@@ -79,7 +79,7 @@ const SectionList = ({
         <div className="section-list__info">
           <div>
             <div className="section-list__main">{name || language}</div>
-            <div className="">{reference || fluency}</div>
+            <div>{reference || fluency}</div>
           </div>
         </div>
       </div>
@@ -93,9 +93,9 @@ const SectionList = ({
             <div className="section-list__sub">
               {studyType} degree in {area}
             </div>
-            <div className="">Score: {score}</div>
+            <div>Score: {score}</div>
           </div>
-          <div className="">
+          <div>
             {startDate}-{endDate}
           </div>
         </div>
@@ -110,8 +110,8 @@ const SectionList = ({
             <div className="section-list__main">{title}</div>
             <div className="section-list__sub">{awarder}</div>
           </div>
-          <div className="">{date}</div>
-          <div className="">{summary}</div>
+          <div>{date}</div>
+          <div>{summary}</div>
         </div>
       </div>
     );
@@ -135,8 +135,8 @@ const SectionList = ({
             <div className="section-list__sub">{publisher}</div>
           </div>
           <div className="section-list__date">{releaseDate}</div>
-          <div className="">{summary}</div>
-          <div className="">{url}</div>
+          <div>{summary}</div>
+          <div>{url}</div>
         </div>
       </div>
     );

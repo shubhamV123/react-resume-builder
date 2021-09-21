@@ -1,19 +1,19 @@
 @import '../../../styles/index.scss';
 
-.section-list__info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.section-list__main {
-  color: $color-gray-900;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.section-list__sub {
-  color: $color-gray-700;
+.section-list {
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__main {
+    color: $color-gray-900;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__sub {
+    color: $color-gray-700;
+  }
 }
 
 @media print {

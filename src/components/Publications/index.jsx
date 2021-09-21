@@ -3,8 +3,7 @@ import { ResumeContext } from '@app/App';
 
 import Section from '../Sections/componentSections';
 
-const Publications = (props) => {
-  const data = useContext(ResumeContext);
+const Publications = () => {
   const { publications } = useContext(ResumeContext);
 
   return <Section list={publications} sectionName="Publications" />;

@@ -3,8 +3,7 @@ import { ResumeContext } from '@app/App';
 
 import Section from '../Sections/componentSections';
 
-const Languages = (props) => {
-  const data = useContext(ResumeContext);
+const Languages = () => {
   const { languages } = useContext(ResumeContext);
 
   return <Section list={languages} sectionName="Languages" />;

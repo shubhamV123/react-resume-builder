@@ -4,20 +4,13 @@ import { ResumeContext } from '@app/App';
 import './index.scss';
 
 const Header = () => {
-  const data = useContext(ResumeContext);
   const { basics } = useContext(ResumeContext);
-  const { name, label, image, email, phone, url, summary, location, profiles } =
-    basics;
+  const { name, label, image, email, phone, url, location, profiles } = basics;
   return (
     <div className="header">
-      <img
-        src="https://www.w3schools.com/tags/img_girl.jpg"
-        alt="profilePicture"
-        width="100"
-        height="125"
-      />
+      <img src={image} alt="profilePicture" width="100" height="125" />
       <div className="header__name">{name}</div>
-      <div className="">{label}</div>
+      <div>{label}</div>
       <div className="header__contact">
         {email} {phone && `| ${phone}`}
         {location.city && `| ${location.city}`}, {location.region}
@@ -26,7 +19,7 @@ const Header = () => {
         <a href={url}>{url}</a>
         {profiles.map((item, index) => {
           return (
-            <div key={index} className="">
+            <div key={index}>
               {item.network}: {item.username} url: {item.url}
             </div>
           );

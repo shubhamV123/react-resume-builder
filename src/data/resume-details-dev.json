@@ -2,7 +2,7 @@
   "basics": {
     "name": "John Doe",
     "label": "Programmer",
-    "image": "",
+    "image": "https://www.w3schools.com/tags/img_girl.jpg",
     "email": "john@gmail.com",
     "phone": "(912) 555-4321",
     "url": "https://johndoe.com",
@@ -27,8 +27,8 @@
       "name": "Company A",
       "position": "President",
       "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "startDate": "May, 2013",
+      "endDate": "Feb, 2015",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
       "highlights": [
         "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
@@ -40,8 +40,8 @@
       "name": "Company B",
       "position": "President",
       "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "startDate": "Feb, 2015",
+      "endDate": "Present",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. ",
       "highlights": [
         "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
@@ -52,11 +52,11 @@
   ],
   "volunteer": [
     {
-      "organization": "Company B",
+      "organization": "Company C",
       "position": "President",
       "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "startDate": "Jan, 2013",
+      "endDate": "Oct, 2013",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
       "highlights": [
         "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
@@ -71,8 +71,8 @@
       "url": "https://institution.com/",
       "area": "Software Development",
       "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
+      "startDate": "Aug, 2009",
+      "endDate": "May, 2013",
       "score": "4.0",
       "courses": ["DB1101 - Basic SQL"]
     }
@@ -80,7 +80,7 @@
   "awards": [
     {
       "title": "Award",
-      "date": "2014-11-01",
+      "date": "Sep, 2019",
       "awarder": "Company",
       "summary": "There is no spoon."
     }
@@ -89,7 +89,7 @@
     {
       "name": "Publication",
       "publisher": "Company",
-      "releaseDate": "2014-10-01",
+      "releaseDate": "May, 2020",
       "url": "https://publication.com",
       "summary": "Description…"
     }
@@ -125,8 +125,8 @@
       "description": "Description…",
       "highlights": ["Won award at AIHacks 2016"],
       "keywords": ["HTML"],
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
+      "startDate": "May, 2018",
+      "endDate": "Aug, 2018",
       "url": "https://project.com/",
       "roles": ["Team Lead"],
       "entity": "Entity",
