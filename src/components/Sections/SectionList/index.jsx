@@ -57,11 +57,11 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__name">
+            <div className="section-list__main">
               {name || entity || organization}
             </div>
-            <div className="section-list__name">{type}</div>
-            <div className="section-list__role">{_roles || position}</div>
+            <div className="">{type}</div>
+            <div className="section-list__sub">{_roles || position}</div>
           </div>
           <div className="section-list__date">
             {startDate}-{endDate}
@@ -78,7 +78,7 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__title">{name || language}</div>
+            <div className="section-list__main">{name || language}</div>
             <div className="">{reference || fluency}</div>
           </div>
         </div>
@@ -89,13 +89,13 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__university">{institution}</div>
-            <div className="section-list__studyType">
+            <div className="section-list__main">{institution}</div>
+            <div className="section-list__sub">
               {studyType} degree in {area}
             </div>
             <div className="">Score: {score}</div>
           </div>
-          <div className="section-list__date">
+          <div className="">
             {startDate}-{endDate}
           </div>
         </div>
@@ -107,10 +107,10 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__title">{title}</div>
-            <div className="section-list__awarder">{awarder}</div>
+            <div className="section-list__main">{title}</div>
+            <div className="section-list__sub">{awarder}</div>
           </div>
-          <div className="section-list__date">{date}</div>
+          <div className="">{date}</div>
           <div className="">{summary}</div>
         </div>
       </div>
@@ -120,7 +120,7 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__university">{name}</div>
+            <div className="section-list__main">{name}</div>
           </div>
         </div>
         <ul className="section-list__ul">{_keywords}</ul>
@@ -131,8 +131,8 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__title">{name}</div>
-            <div className="section-list__awarder">{publisher}</div>
+            <div className="section-list__main ">{name}</div>
+            <div className="section-list__sub">{publisher}</div>
           </div>
           <div className="section-list__date">{releaseDate}</div>
           <div className="">{summary}</div>
@@ -145,8 +145,8 @@ const SectionList = ({
       <div className="section-list">
         <div className="section-list__info">
           <div>
-            <div className="section-list__name">{name}</div>
-            <div className="section-list__level">{level}</div>
+            <div className="section-list__main">{name}</div>
+            <div className="section-list__sub">{level}</div>
           </div>
         </div>
         <ul className="section-list__ul">{_keywords}</ul>
