@@ -138,7 +138,9 @@ const SectionList = ({
             <div className="section-list__main ">{name}</div>
             <div className="section-list__sub">{publisher}</div>
           </div>
-          <div className="section-list__date">{releaseDate}</div>
+          <div className="section-list__date">
+            {format(new Date(releaseDate), 'MMMM, YYY')}
+          </div>
           <div>{summary}</div>
           <div>{url}</div>
         </div>

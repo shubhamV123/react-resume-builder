@@ -27,8 +27,8 @@
       "name": "Company A",
       "position": "President",
       "url": "https://company.com",
-      "startDate": "May, 2013",
-      "endDate": "Feb, 2015",
+      "startDate": "2015-03-02",
+      "endDate": "2016-03-02",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
       "highlights": [
         "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
@@ -40,8 +40,8 @@
       "name": "Company B",
       "position": "President",
       "url": "https://company.com",
-      "startDate": "Feb, 2015",
-      "endDate": "Present",
+      "startDate": "2016-03-02",
+      "endDate": "2017-03-02",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis. ",
       "highlights": [
         "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
@@ -55,8 +55,8 @@
       "organization": "Company C",
       "position": "President",
       "url": "https://company.com",
-      "startDate": "Jan, 2013",
-      "endDate": "Oct, 2013",
+      "startDate": "2015-03-02",
+      "endDate": "2016-03-02",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta pharetra ornare. Aliquam vitae massa sagittis, laoreet lacus sed, porttitor felis. Curabitur a eros risus. Aliquam augue eros, finibus sit amet lacus fermentum, congue commodo turpis.",
       "highlights": [
         "A 15% reduction in transportation costs, resulting in $1.2M annual savings",
@@ -71,8 +71,8 @@
       "url": "https://institution.com/",
       "area": "Software Development",
       "studyType": "Bachelor",
-      "startDate": "Aug, 2009",
-      "endDate": "May, 2013",
+      "startDate": "2009-03-02",
+      "endDate": "2013-05-02",
       "score": "4.0",
       "courses": ["DB1101 - Basic SQL"]
     }
@@ -80,7 +80,7 @@
   "awards": [
     {
       "title": "Award",
-      "date": "Sep, 2019",
+      "date": "2017-03-02",
       "awarder": "Company",
       "summary": "There is no spoon."
     }
@@ -89,7 +89,7 @@
     {
       "name": "Publication",
       "publisher": "Company",
-      "releaseDate": "May, 2020",
+      "releaseDate": "2017-03-02",
       "url": "https://publication.com",
       "summary": "Description…"
     }
@@ -125,8 +125,8 @@
       "description": "Description…",
       "highlights": ["Won award at AIHacks 2016"],
       "keywords": ["HTML"],
-      "startDate": "May, 2018",
-      "endDate": "Aug, 2018",
+      "startDate": "2017-03-02",
+      "endDate": "2017-03-02",
       "url": "https://project.com/",
       "roles": ["Team Lead"],
       "entity": "Entity",
