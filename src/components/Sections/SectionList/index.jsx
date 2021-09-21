@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { format, formatDistance, formatRelative, subDays } from 'date-fns';
+
 import './index.scss';
 
 const SectionList = ({
@@ -64,7 +66,8 @@ const SectionList = ({
             <div className="section-list__sub">{_roles || position}</div>
           </div>
           <div className="section-list__date">
-            {startDate}-{endDate}
+            {format(new Date(startDate), 'MMMM, YYY')}-
+            {format(new Date(endDate), 'MMMM, YYY')}
           </div>
         </div>
         <div>{description || summary}</div>
@@ -96,7 +99,8 @@ const SectionList = ({
             <div>Score: {score}</div>
           </div>
           <div>
-            {startDate}-{endDate}
+            {format(new Date(startDate), 'MMMM, YYY')}-
+            {format(new Date(endDate), 'MMMM, YYY')}
           </div>
         </div>
         <ul className="section-list__ul">{_courses}</ul>
@@ -110,7 +114,7 @@ const SectionList = ({
             <div className="section-list__main">{title}</div>
             <div className="section-list__sub">{awarder}</div>
           </div>
-          <div>{date}</div>
+          {format(new Date(date), 'MMMM, YYY')}
           <div>{summary}</div>
         </div>
       </div>
