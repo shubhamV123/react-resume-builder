@@ -29,11 +29,11 @@ module.exports = {
   optimize: {
     bundle: true,
     minify: true,
+    target: 'browserslist',
   },
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-sass',
-    '@snowpack/plugin-webpack',
   ],
 };

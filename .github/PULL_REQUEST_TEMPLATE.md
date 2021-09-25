@@ -17,3 +17,6 @@ Please delete options that are not relevant (including this descriptive text).
 ### How Has This Been Tested?
 
 Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration.
+
+### Github commit message format
+This project uses commitlint. So follow this convention which suits your purpose. For [reference](https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/index.js)
