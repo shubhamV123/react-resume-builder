@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import { format } from 'date-fns';
+import { format } from 'date-fns'
 
-import './index.scss';
+import './index.scss'
 
 const SectionList = ({
   name,
@@ -32,9 +32,10 @@ const SectionList = ({
   awarder,
   publisher,
   releaseDate,
-  level,
+  level
 }) => {
-  const isDatesEqual = new Date(endDate).toDateString() === new Date().toDateString();
+  const isDatesEqual =
+    new Date(endDate).toDateString() === new Date().toDateString()
   const injectHTML = (content, key) => {
     return content?.map((data, index) => {
       return (
@@ -42,19 +43,19 @@ const SectionList = ({
           key={`${key}_${index}`}
           dangerouslySetInnerHTML={{ __html: data }}
         ></li>
-      );
-    });
-  };
-  const _highlights = injectHTML(highlights, '_highlights');
+      )
+    })
+  }
+  const _highlights = injectHTML(highlights, '_highlights')
   const _keywords = keywords && `${keywords.join(', ')}`
-  const _roles = roles && `${roles.join(', ')}`;
-  const _courses = injectHTML(courses, '_courses');
+  const _roles = roles && `${roles.join(', ')}`
+  const _courses = injectHTML(courses, '_courses')
 
   const sectionHighlightsAllowed = [
     'Work Experience',
     'Volunteer Work',
-    'Projects',
-  ];
+    'Projects'
+  ]
   if (sectionHighlightsAllowed.includes(sectionName)) {
     return (
       <div className="section-list">
@@ -68,22 +69,25 @@ const SectionList = ({
           </div>
           <div className="section-list__date">
             {format(new Date(startDate), 'MMM YYY')}-
-            {isDatesEqual?"Present":format(new Date(endDate), 'MMM YYY')}
+            {isDatesEqual ? 'Present' : format(new Date(endDate), 'MMM YYY')}
           </div>
         </div>
         <div>{description || summary}</div>
-       
-        <ul className="section-list__ul">{_highlights}
-        {keywords?.length> 0 && <li dangerouslySetInnerHTML={{__html:_keywords}}/>}
+
+        <ul className="section-list__ul">
+          {_highlights}
+          {keywords?.length > 0 && (
+            <li dangerouslySetInnerHTML={{ __html: _keywords }} />
+          )}
         </ul>
-        
-        
       </div>
-    );
+    )
   } else if (sectionName == 'Languages' || sectionName == 'References') {
     return (
-      <li>{name || language}: {reference || fluency}</li>
-    );
+      <li>
+        {name || language}: {reference || fluency}
+      </li>
+    )
   } else if (sectionName == 'Education') {
     return (
       <div className="section-list">
@@ -97,12 +101,12 @@ const SectionList = ({
           </div>
           <div>
             {format(new Date(startDate), 'MMM YYY')}-
-            {isDatesEqual?"Present": format(new Date(endDate), 'MMM YYY')}
+            {isDatesEqual ? 'Present' : format(new Date(endDate), 'MMM YYY')}
           </div>
         </div>
         <ul className="section-list__ul">{_courses}</ul>
       </div>
-    );
+    )
   } else if (sectionName == 'Awards') {
     return (
       <div className="section-list">
@@ -115,7 +119,7 @@ const SectionList = ({
         </div>
         <div className="section-list__footer">{summary}</div>
       </div>
-    );
+    )
   } else if (sectionName == 'Interests') {
     return (
       <div className="section-list">
@@ -124,9 +128,12 @@ const SectionList = ({
             <div className="section-list__main">{name}</div>
           </div>
         </div>
-        <ul className="section-list__ul"> <li dangerouslySetInnerHTML={{__html:_keywords}}/></ul>
+        <ul className="section-list__ul">
+          {' '}
+          <li dangerouslySetInnerHTML={{ __html: _keywords }} />
+        </ul>
       </div>
-    );
+    )
   } else if (sectionName == 'Publications') {
     return (
       <div className="section-list">
@@ -138,14 +145,18 @@ const SectionList = ({
           <div className="section-list__date">
             {format(new Date(releaseDate), 'MMM YYY')}
           </div>
-         
         </div>
         <div className="section-list__footer">
-        <div className="section-list__footer-desc">{summary}</div>
-        <div>Publication Url: <a href={url} target="_blank">{url}</a></div>
+          <div className="section-list__footer-desc">{summary}</div>
+          <div>
+            Publication Url:{' '}
+            <a href={url} target="_blank">
+              {url}
+            </a>
+          </div>
         </div>
       </div>
-    );
+    )
   } else if (sectionName == 'Skills') {
     return (
       <div className="section-list">
@@ -155,10 +166,13 @@ const SectionList = ({
             <div className="section-list__sub">{level}</div>
           </div>
         </div>
-        <ul className="section-list__ul"> <li dangerouslySetInnerHTML={{__html:_keywords}}/></ul>
+        <ul className="section-list__ul">
+          {' '}
+          <li dangerouslySetInnerHTML={{ __html: _keywords }} />
+        </ul>
       </div>
-    );
+    )
   }
-};
+}
 
-export default SectionList;
+export default SectionList
