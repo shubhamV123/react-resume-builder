@@ -5,6 +5,7 @@
   padding: $spacing-stack-s-4 $spacing-stack-l-3 $spacing-stack-s-4
     $spacing-stack-l-3;
   flex: 1;
+  word-break: break-all;
 }
 
 @media print {
