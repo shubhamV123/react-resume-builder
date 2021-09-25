@@ -1,0 +1,39 @@
+@import '../../../styles/index.scss';
+
+.section-list {
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__main {
+    color: $color-gray-900;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__sub {
+    color: $color-gray-700;
+    font-style: italic;
+    padding-bottom: $spacing-stack-s;
+  }
+  &__sub-2 {
+    font-size: 0.8rem;
+  }
+  &__footer {
+    padding-bottom: $spacing-stack-s-4;
+    &-desc {
+      padding-bottom: $spacing-stack-s;
+    }
+  }
+  &__ul {
+    > li {
+      padding-bottom: $spacing-stack-s;
+    }
+  }
+}
+
+@media print {
+  .section-list__ul {
+    @include print-ul-margin();
+  }
+}

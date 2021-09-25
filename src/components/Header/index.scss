@@ -2,20 +2,27 @@
 
 .header {
   text-align: center;
-}
-
-.header__name {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  color: $color-gray-900;
-  font-weight: bold;
-}
-
-.header__contact {
-  line-height: 1.2;
-}
-
-.header__contact-link {
-  border-bottom: 1px solid $color-gray-500;
-  padding-bottom: $spacing-stack-s-4;
+  &__img {
+    border-radius: 50%;
+  }
+  &__job-title {
+    color: $color-gray-500;
+    line-height: 1.2;
+    font-size: 0.9rem;
+    padding-bottom: $spacing-stack-s-3;
+  }
+  &__name {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: $color-gray-900;
+    font-weight: bold;
+  }
+  &__contact {
+    line-height: 1.2;
+    padding-bottom: $spacing-stack-s;
+  }
+  &__contact-link {
+    border-bottom: 1px solid $color-gray-500;
+    padding-bottom: $spacing-stack-s-4;
+  }
 }
