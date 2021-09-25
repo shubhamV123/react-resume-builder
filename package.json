@@ -3,6 +3,10 @@
   "version": "2.4.0",
   "description": "A simple react application to create your resume based on dynamic configuration",
   "author": "Shubham Verma <shubhamv8527@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubhamV123"
+  },
   "license": "MIT",
   "scripts": {
     "start": "snowpack dev",

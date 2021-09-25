@@ -63,3 +63,14 @@ You will also see any lint errors in the console.
 
 1. [How I structure my css](https://matthiasott.com/notes/how-i-structure-my-css)
 2. Tailwing [config](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js)
+
+
+## Contributors
+
+
+<div>
+    <a href="https://github.com/shubhamV123"><img src="https://avatars.githubusercontent.com/u/29898106?v=4" title="shubhamV123" width="80" height="80"></a>
+    <a href="https://github.com/Jovany1543"><img src="https://avatars.githubusercontent.com/u/79227932?s=52&v=4" title="Jovany1543" width="80" height="80"></a>
+
+
+<div>
