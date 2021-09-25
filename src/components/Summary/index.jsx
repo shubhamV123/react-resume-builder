@@ -7,10 +7,10 @@ const Summary = () => {
   const { basics } = useContext(ResumeContext);
   const { summary } = basics;
   return (
-    <div className="summary">
+    <div className="summary section">
       <div>
-        <div className="title">Summary</div>
-        <div className="content">{summary}</div>
+        <div className="section__title">Summary</div>
+        <div className="summary__content">{summary}</div>
       </div>
     </div>
   );

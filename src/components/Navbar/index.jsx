@@ -7,8 +7,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+import Help from './Help';
+
 const Title =  styled(Typography)(({ theme }) => ({
+ marginRight:"16px"
+}));
+
+const TitleContainer =  styled('div')(({ theme }) => ({
   flexGrow: 1,
+  display:'flex',
+  alignItems:'center'
 }));
 
 const HowItWorks = styled(Typography)(({ theme }) => ({
@@ -27,9 +35,14 @@ const Navbar = ({ handleModal, printResume, showPrintIcon }) => {
     <div id="layout__no-print">
       <AppBar>
         <Toolbar>
+         <TitleContainer>
           <Title variant="h6">
-            Resume builder
-          </Title>
+              Resume builder
+            
+            </Title>
+            <Help/>
+           </TitleContainer>
+          
           <HowItWorks
             variant="subtitle1"
             onClick={handleModal}

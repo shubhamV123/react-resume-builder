@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { format, formatDistance, formatRelative, subDays } from 'date-fns';
+import { format } from 'date-fns';
 
 import './index.scss';
 
@@ -34,6 +34,7 @@ const SectionList = ({
   releaseDate,
   level,
 }) => {
+  const isDatesEqual = new Date(endDate).toDateString() === new Date().toDateString();
   const injectHTML = (content, key) => {
     return content?.map((data, index) => {
       return (
@@ -45,8 +46,8 @@ const SectionList = ({
     });
   };
   const _highlights = injectHTML(highlights, '_highlights');
-  const _keywords = injectHTML(keywords, '_keywords');
-  const _roles = injectHTML(roles, '_roles');
+  const _keywords = keywords && `${keywords.join(', ')}`
+  const _roles = roles && `${roles.join(', ')}`;
   const _courses = injectHTML(courses, '_courses');
 
   const sectionHighlightsAllowed = [
@@ -62,30 +63,26 @@ const SectionList = ({
             <div className="section-list__main">
               {name || entity || organization}
             </div>
-            <div>{type}</div>
+            {/* <div>{type}</div> */}
             <div className="section-list__sub">{_roles || position}</div>
           </div>
           <div className="section-list__date">
-            {format(new Date(startDate), 'MMMM, YYY')}-
-            {format(new Date(endDate), 'MMMM, YYY')}
+            {format(new Date(startDate), 'MMM YYY')}-
+            {isDatesEqual?"Present":format(new Date(endDate), 'MMM YYY')}
           </div>
         </div>
         <div>{description || summary}</div>
-        {url && <div>{url}</div>}
-        <ul className="section-list__ul">Highlights:{_highlights}</ul>
-        {_keywords && <ul className="section-list__ul">{_keywords}</ul>}
+       
+        <ul className="section-list__ul">{_highlights}
+        {keywords?.length> 0 && <li dangerouslySetInnerHTML={{__html:_keywords}}/>}
+        </ul>
+        
+        
       </div>
     );
   } else if (sectionName == 'Languages' || sectionName == 'References') {
     return (
-      <div className="section-list">
-        <div className="section-list__info">
-          <div>
-            <div className="section-list__main">{name || language}</div>
-            <div>{reference || fluency}</div>
-          </div>
-        </div>
-      </div>
+      <li>{name || language}: {reference || fluency}</li>
     );
   } else if (sectionName == 'Education') {
     return (
@@ -96,11 +93,11 @@ const SectionList = ({
             <div className="section-list__sub">
               {studyType} degree in {area}
             </div>
-            <div>Score: {score}</div>
+            <div className="section-list__sub-2">Score: {score}</div>
           </div>
           <div>
-            {format(new Date(startDate), 'MMMM, YYY')}-
-            {format(new Date(endDate), 'MMMM, YYY')}
+            {format(new Date(startDate), 'MMM YYY')}-
+            {isDatesEqual?"Present": format(new Date(endDate), 'MMM YYY')}
           </div>
         </div>
         <ul className="section-list__ul">{_courses}</ul>
@@ -114,9 +111,9 @@ const SectionList = ({
             <div className="section-list__main">{title}</div>
             <div className="section-list__sub">{awarder}</div>
           </div>
-          {format(new Date(date), 'MMMM, YYY')}
-          <div>{summary}</div>
+          {format(new Date(date), 'MMM YYY')}
         </div>
+        <div className="section-list__footer">{summary}</div>
       </div>
     );
   } else if (sectionName == 'Interests') {
@@ -127,7 +124,7 @@ const SectionList = ({
             <div className="section-list__main">{name}</div>
           </div>
         </div>
-        <ul className="section-list__ul">{_keywords}</ul>
+        <ul className="section-list__ul"> <li dangerouslySetInnerHTML={{__html:_keywords}}/></ul>
       </div>
     );
   } else if (sectionName == 'Publications') {
@@ -139,10 +136,13 @@ const SectionList = ({
             <div className="section-list__sub">{publisher}</div>
           </div>
           <div className="section-list__date">
-            {format(new Date(releaseDate), 'MMMM, YYY')}
+            {format(new Date(releaseDate), 'MMM YYY')}
           </div>
-          <div>{summary}</div>
-          <div>{url}</div>
+         
+        </div>
+        <div className="section-list__footer">
+        <div className="section-list__footer-desc">{summary}</div>
+        <div>Publication Url: <a href={url} target="_blank">{url}</a></div>
         </div>
       </div>
     );
@@ -155,7 +155,7 @@ const SectionList = ({
             <div className="section-list__sub">{level}</div>
           </div>
         </div>
-        <ul className="section-list__ul">{_keywords}</ul>
+        <ul className="section-list__ul"> <li dangerouslySetInnerHTML={{__html:_keywords}}/></ul>
       </div>
     );
   }

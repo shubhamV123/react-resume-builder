@@ -13,6 +13,22 @@
   }
   &__sub {
     color: $color-gray-700;
+    font-style: italic;
+    padding-bottom: $spacing-stack-s;
+  }
+  &__sub-2 {
+    font-size: 0.8rem;
+  }
+  &__footer {
+    padding-bottom: $spacing-stack-s-4;
+    &-desc {
+      padding-bottom: $spacing-stack-s;
+    }
+  }
+  &__ul {
+    > li {
+      padding-bottom: $spacing-stack-s;
+    }
   }
 }
 
